@@ -44,14 +44,14 @@ Aspect:
 Aspect is a class that provides additional services to the project
    like (transaction management, logging,security,encoding and deconding etc..)
 
-or 
+*  
 Aspect is system services(transaction management, logging,security,encoding and deconding etc..) which is written in sepearte class.
 
 
 Advice:
 -------
 -Is a implementation of Aspect.
-or
+*
 -It is a method inside the Aspect class.
 
 -It define the  job that an aspect will perform i.e advice defines
@@ -106,7 +106,7 @@ Target:
 -------
 -The target class is a busniess component which is being advised.
 
-or
+*
 It is pure business logic class which is having BL but without
 services(logging,exception,.....)
 
@@ -126,9 +126,9 @@ joinpoint:
 Pointcut:
 ---------
 -A pointcut defines at what joinpoints advice should be applied.
-or
+*
 -It is an expression language of AOP that matches  joinpoints.
-or
+*
 -It is an expression , it will select blMethod() which needs advices.
 
  syntax:
