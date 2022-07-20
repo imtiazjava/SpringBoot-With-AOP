@@ -41,23 +41,18 @@ We can Move additional services of a project into the other classes
 
 Aspect:
 -------
-Aspect is a class that provides additional services to the project
+* Aspect is a class that provides additional services to the project
    like (transaction management, logging,security,encoding and deconding etc..)
-
-*  
-Aspect is system services(transaction management, logging,security,encoding and deconding etc..) which is written in sepearte class.
+* Aspect is system services(transaction management, logging,security,encoding and deconding etc..) which is written in sepearte class.
 
 
 Advice:
 -------
--Is a implementation of Aspect.
-*
--It is a method inside the Aspect class.
+* Is a implementation of Aspect.
+* It is a method inside the Aspect class.
+* It define the  job that an aspect will perform i.e advice defines both what and when of an aspect.
 
--It define the  job that an aspect will perform i.e advice defines
-both what and when of an aspect.
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Advice Type               descritption
 ---------------------------------------
 Before                   -Called before target method is invoked.
@@ -104,32 +99,22 @@ Excution Flow:
 
 Target:
 -------
--The target class is a busniess component which is being advised.
-
-*
-It is pure business logic class which is having BL but without
+* The target class is a busniess component which is being advised.
+* It is pure business logic class which is having BL but without
 services(logging,exception,.....)
-
 
 Proxy:
 ------
 A proxy is the object at runtime after applying advices to the  target object.
 
-
-
 joinpoint:
 -----------
-
--The point where services is merged is called as joinpoint
-
-
+* The point where services is merged is called as joinpoint
 Pointcut:
 ---------
--A pointcut defines at what joinpoints advice should be applied.
-*
--It is an expression language of AOP that matches  joinpoints.
-*
--It is an expression , it will select blMethod() which needs advices.
+* A pointcut defines at what joinpoints advice should be applied.
+* It is an expression language of AOP that matches  joinpoints.
+* It is an expression , it will select blMethod() which needs advices.
 
  syntax:
  -------
@@ -159,4 +144,5 @@ eg: public  void com.cgi.main.dao.EmployeeDAO.saveEmployee(Employee emp)
 
   4. public * com.cgi.main.*.*(..)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
