@@ -123,14 +123,17 @@ A proxy is the object at runtime after applying advices to the  target object.
 joinpoint:
 -----------
 * The point where services is merged is called as joinpoint
+
 Pointcut:
 ---------
+
 * A pointcut defines at what joinpoints advice should be applied.
 * It is an expression language of AOP that matches  joinpoints.
 * It is an expression , it will select blMethod() which needs advices.
 
  syntax:
  -------
+ 
   AccessSpecifier/modifer RetunType Package.className.MethodName(Arguments)
 
 eg: public  void com.cgi.main.dao.EmployeeDAO.saveEmployee(Employee emp)
