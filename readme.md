@@ -62,6 +62,14 @@ Advice Type               descritption
 ---------------------------------------
 Before                   -Called before target method is invoked.
 
+After                    -Called after target method return regardless of the outcome.
+
+Around                   -Called after target and before target method.
+
+After-returning           -Called after target methods completes successfully
+
+After-throwing            -Called when target method throws an expection
+
 Excution Flow:
 --------------
     adviceMethod() - first execute
