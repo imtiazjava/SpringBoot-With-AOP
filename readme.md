@@ -52,6 +52,11 @@ Advice:
 * It is a method inside the Aspect class.
 * It define the  job that an aspect will perform i.e advice defines both what and when of an aspect.
 
+
+Pointcut:
+-----------
+- It is expression, it will select ref.method which needs advices.
+- it can never specify what advices.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Advice Type               descritption
 ---------------------------------------
